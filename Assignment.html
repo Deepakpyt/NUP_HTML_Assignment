@@ -44,27 +44,46 @@
             margin-left: 20px;
         }
 
-        table {
-            width: 100%;
+        #nutrients {
+
             border-collapse: collapse;
-            margin-top: 20px;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         }
 
-        table,
-        th,
-        td {
-            border: 1px solid #333;
-        }
-
-        th,
-        td {
-            padding: 10px;
+        #nutrients thead tr {
+            background-color: #009879;
+            color: #ffffff;
             text-align: left;
         }
 
-        #nutrients th {
-            background-color: aqua;
+        #nutrients th,
+        #nutrients td {
+            padding: 12px 15px;
         }
+
+        #nutrients tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        #nutrients tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        #nutrients tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        #nutrients tbody tr.active-row {
+            font-weight: bold;
+            color: #009879;
+        }
+
+
+
 
         /* Responsive Styles */
         @media only screen and (max-width: 600px) {
@@ -123,30 +142,35 @@ background-color: #f8f8f8;">
     <h1>Seasonal Fruits</h1>
     <section id="about" style="background-color: aqua;">
         <h3>Introduction to Seasonal Fruits and It’s Benefits</h3>
-        <article id="main_artical" style="background-color: azure; padding: 5px; border-radius: 6px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);">
-        <p>As <em>Henry David Thoreau</em> said – <strong>“Live in each season as it passes:
-                breathe the air, drink the drink, taste the seasonal fruit.”</strong></p>
-        <p>In summers, we eat mango, the king of fruits, for its rich flavour. Its experience creates magic in our taste
-            buds. Why does it happen that apples are sweeter during fall, or the orange is juicier in winter? </p>
-        <p>That’s because every seasonal fruit tastes better in the season, as it naturally ripens to reach its
-            wholesome
-            taste and nutritional richness.
-            Here, we aregoing to discuss a few seasonal fruits and their benefits.</p>
-        <h3>What are the Benefits of Eating Seasonal Fruits?</h3>
-        <p>With every season, there are climatic changes that affect everything around.
-            Eventually, to accommodate these changing seasons withoutgetting ill, we all require a different seasonal
-            food
-            set togain the best nutritional values.</p>
-        <p>To support us in our endeavour to remain healthy with the changing season, seasonal fruits come to our aid,
-            as
-            they are power-packed with all vitamins, minerals, and nutrients.
-            These help our body fulfill its nutritional demands.</p>
+        <article id="main_artical"
+            style="background-color: azure; padding: 5px; border-radius: 6px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);">
+            <p>As <em>Henry David Thoreau</em> said – <strong>“Live in each season as it passes:
+                    breathe the air, drink the drink, taste the seasonal fruit.”</strong></p>
+            <p>In summers, we eat mango, the king of fruits, for its rich flavour. Its experience creates magic in our
+                taste
+                buds. Why does it happen that apples are sweeter during fall, or the orange is juicier in winter? </p>
+            <p>That’s because every seasonal fruit tastes better in the season, as it naturally ripens to reach its
+                wholesome
+                taste and nutritional richness.
+                Here, we aregoing to discuss a few seasonal fruits and their benefits.</p>
+            <h3>What are the Benefits of Eating Seasonal Fruits?</h3>
+            <p>With every season, there are climatic changes that affect everything around.
+                Eventually, to accommodate these changing seasons withoutgetting ill, we all require a different
+                seasonal
+                food
+                set togain the best nutritional values.</p>
+            <p>To support us in our endeavour to remain healthy with the changing season, seasonal fruits come to our
+                aid,
+                as
+                they are power-packed with all vitamins, minerals, and nutrients.
+                These help our body fulfill its nutritional demands.</p>
         </article>
-        <section id="images" style="display: flex; justify-content: space-around; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);">
-            <img src="https://www.healthifyme.com/blog/wp-content/uploads/2022/02/shutterstock_1917172118.jpeg" alt="A Beautiful Bookeh of Citrus"
-                width="45%" height="auto" />
-            <img src="https://www.healthifyme.com/blog/wp-content/uploads/2021/03/limes.jpg" alt="Limes on Yellow Background" width="45%"
-                height="auto" />
+        <section id="images"
+            style="display: flex; justify-content: space-around; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);">
+            <img src="https://www.healthifyme.com/blog/wp-content/uploads/2022/02/shutterstock_1917172118.jpeg"
+                alt="A Beautiful Bookeh of Citrus" width="45%" height="auto" />
+            <img src="https://www.healthifyme.com/blog/wp-content/uploads/2021/03/limes.jpg"
+                alt="Limes on Yellow Background" width="45%" height="auto" />
         </section>
     </section>
     <section id="brief">
@@ -234,122 +258,126 @@ background-color: #f8f8f8;">
     <section id="table">
         <h3>Table of Some Fruits and Present Micronutrients:-</h3>
         <table id="nutrients">
-            <tr>
-                <td></td>
-                <th>Fruit</th>
-                <th>Carbohydrate</th>
-                <th>Fat</th>
-                <th>Protien</th>
-                <th>Fibers</th>
-                <th>Vitamin A</th>
-                <th>Vitamin C</th>
-                <th>Calories</th>
-            </tr>
-            <tr>
-                <th rowspan="2">Summer</th>
-                <td>Lychee</td>
-                <td>16.5g</td>
-                <td>0.44g</td>
-                <td>0.83g</td>
-                <td>1.3g</td>
-                <td>--</td>
-                <td>--</td>
-                <td>66</td>
-            </tr>
-            <tr>
-                <td>Mango</td>
-                <td>27.9g</td>
-                <td>0.7g</td>
-                <td>1g</td>
-                <td>3.3g</td>
-                <td>--</td>
-                <td>--</td>
-                <td>122</td>
-            </tr>
-            <tr>
-                <th rowspan="2">Pre-Monsoon</th>
-                <td>Blackberries</td>
-                <td>13.8g</td>
-                <td>0.7g</td>
-                <td>2g</td>
-                <td>7.6g</td>
-                <td>10mg</td>
-                <td>30mg</td>
-                <td>--</td>
-            </tr>
-            <tr>
-                <td>Peaches</td>
-                <td>10</td>
-                <td>--</td>
-                <td>0.9g</td>
-                <td>1.5g</td>
-                <td>0.3mg</td>
-                <td>4.1mg</td>
-                <td>42</td>
-            </tr>
-            <tr>
-                <th rowspan="2">Monsoon</th>
-                <td>Blueberries</td>
-                <td>11g</td>
-                <td>1g</td>
-                <td>1g</td>
-                <td>2g</td>
-                <td></td>
-                <td></td>
-                <td>42</td>
-            </tr>
-            <tr>
-                <td>Pomegranate</td>
-                <td>18.7g</td>
-                <td>1.17g</td>
-                <td>1.67g</td>
-                <td>4g</td>
-                <td>--</td>
-                <td>--</td>
-                <td>83</td>
-            </tr>
-            <tr>
-                <th rowspan="2">Winter</th>
-                <td>Orange</td>
-                <td>12g</td>
-                <td>--</td>
-                <td>1g</td>
-                <td>3g</td>
-                <td></td>
-                <td></td>
-                <td>60</td>
-            </tr>
-            <tr>
-                <td>Figs</td>
-                <td>19.18g</td>
-                <td>0.30g</td>
-                <td>0.75g</td>
-                <td>2.9g</td>
-                <td>0.113mg</td>
-                <td>0.30mg</td>
-                <td>74</td>
-            </tr>
-            <tr>
-                <th rowspan="2">All Season</th>
-                <td>Banana</td>
-                <td>22.84g</td>
-                <td>0.33g</td>
-                <td>1.09g</td>
-                <td>12.23g</td>
-                <td>--</td>
-                <td>8.7mg</td>
-                <td>89</td>
-            </tr>
-            <tr>
-                <td>Papaya</td>
-                <td>7.2</td>
-                <td>0.1</td>
-                <td>0.6</td>
-                <td>2.6</td>
-                <td></td>
-                <td></td>
-                <td>32</td>
-            </tr>
+            <thead>
+                <tr>
+                    <td></td>
+                    <th>Fruit</th>
+                    <th>Carbohydrate</th>
+                    <th>Fat</th>
+                    <th>Protien</th>
+                    <th>Fibers</th>
+                    <th>Vitamin A</th>
+                    <th>Vitamin C</th>
+                    <th>Calories</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2">Summer</th>
+                    <td>Lychee</td>
+                    <td>16.5g</td>
+                    <td>0.44g</td>
+                    <td>0.83g</td>
+                    <td>1.3g</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>66</td>
+                </tr>
+                <tr>
+                    <td>Mango</td>
+                    <td>27.9g</td>
+                    <td>0.7g</td>
+                    <td>1g</td>
+                    <td>3.3g</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>122</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Pre-Monsoon</th>
+                    <td>Blackberries</td>
+                    <td>13.8g</td>
+                    <td>0.7g</td>
+                    <td>2g</td>
+                    <td>7.6g</td>
+                    <td>10mg</td>
+                    <td>30mg</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>Peaches</td>
+                    <td>10</td>
+                    <td>--</td>
+                    <td>0.9g</td>
+                    <td>1.5g</td>
+                    <td>0.3mg</td>
+                    <td>4.1mg</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Monsoon</th>
+                    <td>Blueberries</td>
+                    <td>11g</td>
+                    <td>1g</td>
+                    <td>1g</td>
+                    <td>2g</td>
+                    <td></td>
+                    <td></td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <td>Pomegranate</td>
+                    <td>18.7g</td>
+                    <td>1.17g</td>
+                    <td>1.67g</td>
+                    <td>4g</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>83</td>
+                </tr>
+                <tr class="active-row">
+                    <th rowspan="2">Winter</th>
+                    <td>Orange</td>
+                    <td>12g</td>
+                    <td>--</td>
+                    <td>1g</td>
+                    <td>3g</td>
+                    <td></td>
+                    <td></td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Figs</td>
+                    <td>19.18g</td>
+                    <td>0.30g</td>
+                    <td>0.75g</td>
+                    <td>2.9g</td>
+                    <td>0.113mg</td>
+                    <td>0.30mg</td>
+                    <td>74</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">All Season</th>
+                    <td>Banana</td>
+                    <td>22.84g</td>
+                    <td>0.33g</td>
+                    <td>1.09g</td>
+                    <td>12.23g</td>
+                    <td>--</td>
+                    <td>8.7mg</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Papaya</td>
+                    <td>7.2</td>
+                    <td>0.1</td>
+                    <td>0.6</td>
+                    <td>2.6</td>
+                    <td></td>
+                    <td></td>
+                    <td>32</td>
+                </tr>
+            </tbody>
         </table>
     </section>
     <section id="contact_us">
